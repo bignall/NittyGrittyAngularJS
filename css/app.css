@@ -1,0 +1,7 @@
+#myapp h1 input {
+    display: none;
+}
+
+#myapp div:hover > h1 input {
+    display: inline-block;
+}
