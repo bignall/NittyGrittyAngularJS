@@ -5,3 +5,7 @@
 #myapp div:hover > h1 input {
     display: inline-block;
 }
+
+img {
+    height: 200px;
+}
