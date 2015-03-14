@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="ranch">
+    <head>
+        <link rel="stylesheet" type="text/css" htef="/css/foundation.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/app.css"/>
+    </head>
+    <body ng-controller="RanchController as ranch">
+        <h1>My Ranch</h1>
+        <input ng-model="searchquery"/>
+        <div ng-repeat="animal in ranch.animals | filter:searchquery">
+            <animal-description></animal-description>
+        </div>
+        
+        <script type="text/javascript" src="/js/angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
