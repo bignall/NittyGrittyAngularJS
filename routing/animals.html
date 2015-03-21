@@ -1,0 +1,5 @@
+<h2>Animals</h2>
+<input ng-model="searchquery"/>
+<div ng-repeat="animal in ranch.animals | filter:searchquery">
+    <animal-description></animal-description>
+</div>

@@ -6,12 +6,20 @@
     </head>
     <body ng-controller="RanchController as ranch">
         <h1>My Ranch</h1>
-        <input ng-model="searchquery"/>
-        <div ng-repeat="animal in ranch.animals | filter:searchquery">
-            <animal-description></animal-description>
+        
+        <div>
+            <ul>
+                <li><a href="#/animals">Animals</a></li>
+                <li><a href="#/equipment">Equipment</a></li>
+                <li><a href="#/tasks">Tasks</a></li>
+            </ul>
+        </div>
+        <div>
+            <ng-view></ng-view>
         </div>
         
         <script type="text/javascript" src="/js/angular.min.js"></script>
+        <script type="text/javascript" src="/js/angular-route.min.js"></script>
         <script type="text/javascript" src="app.js"></script>
     </body>
 </html>
